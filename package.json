@@ -1,9 +1,16 @@
 {
   "name": "koishi-plugin-pangu",
   "description": "Paranoid text spacing",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "contributors": [
+    "Amatsuka"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wsyzxjn/koishi-plugin-pangu.git"
+  },
   "files": [
     "lib",
     "dist"
