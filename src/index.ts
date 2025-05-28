@@ -1,11 +1,12 @@
-import { Context, Schema } from 'koishi'
+import { Context, Schema } from "koishi";
+import pangu from "pangu";
 
-export const name = 'pangu'
+export const name = "pangu";
 
-export interface Config {}
-
-export const Config: Schema<Config> = Schema.object({})
+export const Config = Schema.object({});
 
 export function apply(ctx: Context) {
-  // write your plugin here
+  ctx.before("send", (session) => {
+    session.content = pangu.spacing(session.content);
+  });
 }
